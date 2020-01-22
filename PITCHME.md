@@ -1,12 +1,9 @@
-Od Node.js do 
-# Deno
+# Od Node.js<br>do Deno
 
 <img src="deno-c.png" height="200"><br>
 
 Nowoczesny backendowy runtime <br>
 dla JavaScript i TypeScript na rok 2020
-
-<small> Slides: https://pocztarski.com/ondd </small>
 
 ---
 
