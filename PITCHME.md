@@ -431,6 +431,7 @@ Hello, world!
 
 ```ts
 // (do 18.01.2020 - całość w przykładzie serve.ts)
+
 for await (const req of server) {
   console.log(`${req.method} ${req.url}`);
   if (req.method === 'GET') {
@@ -452,6 +453,7 @@ for await (const req of server) {
 
 ```ts
 // (od 18.01.2020 - całość w przykładzie serve2.ts)
+
 for await (const req of server) {
   console.log(`${req.method} ${req.url}`);
   if (req.method === 'GET') {
