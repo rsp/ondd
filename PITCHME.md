@@ -638,9 +638,9 @@ Third Party Modules: https://deno.land/x/
 # Podsumowanie
 
 Deno to runtime dla JavaScript/TypeScript<br>
-To pojedynczy plik<br>
-Nie ma zależności<br>
-Importuje URLe<br>
+Cały runtime pojedynczy plik<br>
+Sam runtime nie ma zależności<br>
+Importuje i wykonuje URLe<br>
 Wspiera dynamiczne importy<br>
 Wspiera top-level await<br>
 Dostarcza ograniczony sandbox
