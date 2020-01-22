@@ -430,7 +430,7 @@ Hello, world!
 # Pliki
 
 ```ts
-// (całość w przykładzie serve.ts)
+// (przed 18.01.2020 - całość w przykładzie serve.ts)
 for await (const req of server) {
   console.log(`${req.method} ${req.url}`);
   if (req.method === 'GET') {
@@ -442,6 +442,27 @@ for await (const req of server) {
     }
   } else {
     req.respond({ status: 405, body: encoder.encode('Bad Method') });
+  }
+}
+```
+
+---
+
+# Pliki
+
+```ts
+// (od 18.01.2020 - całość w przykładzie serve2.ts)
+for await (const req of server) {
+  console.log(`${req.method} ${req.url}`);
+  if (req.method === 'GET') {
+    try {
+      req.respond({ body: await Deno.readFile(`.${req.url}`) });
+    } catch (e) {
+      console.log(e);
+      req.respond({ status: 404, body: 'Not Found' });
+    }
+  } else {
+   req.respond({ status: 405, body: 'Method Not Allowed' });
   }
 }
 ```
