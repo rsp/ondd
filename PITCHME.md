@@ -471,6 +471,30 @@ for await (const req of server) {
 
 ---
 
+# Encoders
+
+[deno.land/x/ende](https://deno.land/x/ende/)
+useless since Deno 0.30
+
+```ts
+// Copyright (c) 2019 Rafał Pocztarski. All rights reserved.
+// MIT License (Expat). See: https://github.com/rsp/deno-ende
+
+const encoder = new TextEncoder();
+const decoder = new TextDecoder();
+
+export const en = (x: string) => encoder.encode(x);
+export const de = (x: Uint8Array) => decoder.decode(x);
+
+export const enc = en;
+export const dec = de;
+
+export const encode = en;
+export const decode = de;
+```
+
+---
+
 # Uruchamianie serwera
 
 Kiedyś:
