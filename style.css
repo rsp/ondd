@@ -12,6 +12,7 @@ h1 {
 }
 
 .reveal pre {
-  width: 190%;
-  /* margin-left: -10%; */
+  width: 140%;
+  margin-left: -20%;
+  font-size: 140%;
 }
