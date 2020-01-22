@@ -151,6 +151,38 @@ deno run --allow-net script.ts
 
 ---
 
+# Uprawnienia
+
+Domyślnie brak dostępu do sieci i dysku
+
+```text
+-A, --allow-all                  all permissions
+    --allow-env                  environment access
+    --allow-hrtime               high resolution time measurement
+    --allow-net=<allow-net>      network access
+    --allow-read=<allow-read>    file system read access
+    --allow-run                  running subprocesses
+    --allow-write=<allow-write>  file system write access
+```
+
+---
+
+# Przykłady
+
+```sh
+$ deno run --allow-read=/etc/file.txt script.ts
+```
+
+```sh
+$ deno run --allow-write=/tmp script.ts
+```
+
+```sh
+$ deno run --allow-net script.ts
+```
+
+---
+
 # Biblioteki
 
 - [deno.land/typedoc](https://deno.land/typedoc/)
@@ -242,7 +274,7 @@ for await (const req of server) {
 
 ---
 
-# Serwer z Oak
+# Framework Oak
 
 ```ts
 import { Application } from 'https://deno.land/x/oak/mod.ts';
@@ -261,6 +293,8 @@ console.log('Listening on http://localhost:8000/');
 ```
 
 ---
+
+# Brak uprawnień
 
 ```bash
 $ deno run --reload example4.ts 
@@ -308,6 +342,8 @@ Czyli najlepszy czas, żeby się zaangażować
 
 ---
 
+# Skazany na sukces
+
 1. Ryan Dahl (znany z sukcesu Node.js)
 2. V8 (Google)
 3. TypeScript (Microsoft)
@@ -324,55 +360,13 @@ Czyli najlepszy czas, żeby się zaangażować
 
 ---
 
-# Uprawnienia
-
-Domyślnie brak dostępu do sieci i dysku
-
-```text
--A, --allow-all                  all permissions
-    --allow-env                  environment access
-    --allow-hrtime               high resolution time measurement
-    --allow-net=<allow-net>      network access
-    --allow-read=<allow-read>    file system read access
-    --allow-run                  running subprocesses
-    --allow-write=<allow-write>  file system write access
-```
-
----
-
-# Przykłady
-
-```sh
-$ deno run --allow-read=file.txt script.ts
-```
-
-```sh
-$ deno run --allow-write=/tmp script.ts
-```
-
-```sh
-$ deno run --allow-net script.ts
-```
-
----
-
 # Importowanie URLi
-
-```ts
-import { hello } from 'https://pocztarski.com/hello.ts';
-
-hello();
-```
 
 Nie trzeba instalować zależności
 
 ---
 
 # Uruchamianie zdalnych skryptów
-
-```bash
-$ deno run https://pocztarski.com/hi.ts
-```
 
 Nie trzeba instalować narzędzi
 
