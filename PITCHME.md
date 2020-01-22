@@ -45,6 +45,8 @@ Deno = Server-side TS (V8 + Tokio w Rust)
 
 ---
 
+# Podejście
+
 “The only thing that matters in software<br>is the experience of the user.”<br><br>- Ryan Dahl
 
 ---
