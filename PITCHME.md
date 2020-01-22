@@ -271,152 +271,35 @@ Listening on http://localhost:8000/
 
 ---
 
+Stan obecny
 
-...
+# v0.30
 
-# Czym jest Deno
-
-xXX
-
-A [...] JavaScript/TypeScript runtime<br>built with [...], [...], and [...]
+Najlepszy czas, żeby się zaangażować
 
 ---
 
-# When and where?
-
-Created by Ryan Dahl in 2018
-
-Works on Linux, macOS and Windows
-
----
-
-# Timeline
-
-2009 Node.js
-
-2012 TypeScript
-
-2015 ts-node
-
-2018 Deno
+1. Ryan Dahl (znany z sukcesu Node.js)
+2. V8 (Google)
+3. TypeScript (Microsoft)
+4. Rust (Mozilla)
 
 ---
 
-# How to get it?
+Moja prognoza:
 
-<big><big> https://deno.land/ </big></big>
+- Każdy będzie czekać aż Deno będzie "gotowe"
+- Nagle wszyscy będą szukać Deno Developerów
 
----
-
-# Installation
-
-For the adventurous:
-
-```sh
-curl -fsSL https://deno.land/x/install/install.sh | sh
-```
-
-```sh
-iwr https://deno.land/x/install/install.ps1 | iex
-```
-
-Or get a single file from:<br><big> https://github.com/denoland/deno/releases </big>
-
-<small>(The scripts above just scrape the GitHub releases page)</small>
+(Tak jak jest teraz z Node.js)
 
 ---
 
-# How to use it?
+# Uprawnienia
 
-```sh
-$ cat script.ts
-```
+Domyślnie brak dostępu do sieci i dysku
 
-```ts
-const x: string = 'Hello, world!';
-console.log(x);
-```
-
-```sh
-$ deno run script.ts
-```
-
----
-
-# Running
-
-```sh
-$ deno run script.ts 
-Compile file:///Users/rsp/talks/deno/git/wid/script.ts
-Hello, world!
-```
-
-```sh
-$ deno run script.ts 
-Hello, world!
-```
-
----
-
-# Caching
-
-Deno caches all the files globally by default
-
-Cleaning the cache (on Mac)
-
-```sh
-rm -rvf ~/Library/Caches/deno
-```
-
-Using local caches
-
-```sh
-DENO_DIR=$(pwd)/.deno deno run hi.ts
-```
-
----
-
-# Deno vs ts-node
-
-See my answer on Stack Overflow for details:<br>
-[deno vs ts-node : what's the difference](https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference/55609763#55609763)
-
-Spoiler:<br>
-Deno was 32x faster on startup for a simple example.<br>
-Much easier development.
-
----
-
-# Remote scripts
-
-```sh
-$ deno run https://pocztarski.com/hi.ts
-```
-
----
-
-Running remote scripts
-
-```sh
-$ deno run https://pocztarski.com/hi.ts
-Download https://pocztarski.com/hi.ts
-Compile https://pocztarski.com/hi.ts
-Download https://pocztarski.com/hello.ts
-Hello, Deno Warsaw!
-```
-
-```sh
-$ deno run https://pocztarski.com/hi.ts
-Hello, Deno Warsaw!
-```
-
----
-
-# Security
-
-No network and filesystem ~~write~~ access by default
-
-```
+```text
 -A, --allow-all                  all permissions
     --allow-env                  environment access
     --allow-hrtime               high resolution time measurement
@@ -428,7 +311,7 @@ No network and filesystem ~~write~~ access by default
 
 ---
 
-# Examples
+# Przykłady
 
 ```sh
 $ deno run --allow-read=file.txt script.ts
@@ -444,47 +327,31 @@ $ deno run --allow-net script.ts
 
 ---
 
-# Importing URLs
+# Importowanie URLi
 
-```
+```ts
 import { hello } from 'https://pocztarski.com/hello.ts';
 
 hello();
 ```
 
-No need for installing dependencies
+Nie trzeba instalować zależności
 
 ---
 
-Running script with imported URLs
+# Uruchamianie zdalnych skryptów
 
-```sh
-$ deno run hi1.ts 
-Compile file:///Users/rsp/talks/deno/git/wid/hi1.ts
-Download https://pocztarski.com/hello.ts
-Hello, world!
-```
-
-```sh
-$ deno run hi1.ts 
-Hello, world!
-```
-
----
-
-# Running remote scripts
-
-```
+```bash
 $ deno run https://pocztarski.com/hi.ts
 ```
 
-No need for installing tools
+Nie trzeba instalować narzędzi
 
 ---
 
 # Dynamic imports<br>top level await
 
-```
+```ts
 const { hello } = await import('https://pocztarski.com/hello.ts');
 
 hello();
@@ -492,10 +359,12 @@ hello();
 
 ---
 
-Running script with dynamic imports
+Kiedyś
 
 ```sh
-$ deno run hi2.ts 
+$ deno run hi2.ts
+```
+```text
 Compile file:///Users/rsp/talks/deno/git/wid/hi2.ts
 Download https://pocztarski.com/hello.ts
 ️⚠️  Deno requests network access to "https://pocztarski.com/hello.ts". Grant?
@@ -503,130 +372,69 @@ Download https://pocztarski.com/hello.ts
 Hello, world!
 ```
 
+---
+
+Teraz
+
+```bash
+$ deno run hi2.ts
+```
+```text
+Compile file:///Users/rsp/talks/git/ondd/hi2.ts
+error: Uncaught TypeError: run again with the --allow-net flag
+```
+
+---
+
 ```sh
 $ deno run --allow-net=pocztarski.com hi2.ts
+```
+```text
 Hello, world!
 ```
 
 ---
 
-# HTTP server
-
-```js
-import { serve } from 'https://deno.land/std@v0.21.0/http/server.ts';
-
-(async () => {
-
-  let n = 0;
-  const encoder = new TextEncoder();
-  const server = serve(':8000');
-  console.log('Listening on http://localhost:8000/');
-
-  for await (const req of server) {
-    const message = `Hello #${++n}, Deno Warsaw!\n`;
-    req.respond({ body: encoder.encode(message) });
-  }
-
-})();
-```
-
 ---
 
-Running HTTP server
+# Serwowanie plików
 
-```sh
-$ deno run server.ts
-Compile file:///Users/rsp/talks/deno/git/wid/server.ts
-Download https://deno.land/std@v0.21.0/http/server.ts
-Download https://deno.land/std@v0.21.0/io/bufio.ts
-...
-Download https://deno.land/std@v0.21.0/testing/diff.ts
-Download https://deno.land/std@v0.21.0/testing/format.ts
-️⚠️  Deno requests network access to "0.0.0.0:8000". Grant?
-[a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
-Listening on http://localhost:8000/
-```
+```ts
+import { serve } from 'https://deno.land/std@v0.28.0/http/server.ts';
 
-```sh
-$ deno run --allow-net=:8000 server.ts
-Listening on http://localhost:8000/
-```
+const encoder = new TextEncoder();
+const server = serve(':8000');
+console.log('Listening on http://localhost:8000/');
 
----
-
-# Serving files
-
-```js
-  for await (const req of server) {
-    console.log(`${req.method} ${req.url}`);
-    if (req.method === 'GET') {
-      try {
-        req.respond({ body: await Deno.readFile(`.${req.url}`) });
-      } catch (e) {
-        req.respond({ status: 404, body: encoder.encode('Not Found') });
-      }
-    } else {
-      req.respond({ status: 405, body: encoder.encode('Method Not Allowed') });
+for await (const req of server) {
+  console.log(`${req.method} ${req.url}`);
+  if (req.method === 'GET') {
+    try {
+      req.respond({ body: await Deno.readFile(`.${req.url}`) });
+    } catch (e) {
+      console.log(e);
+      req.respond({ status: 404, body: encoder.encode('Not Found') });
     }
+  } else {
+    req.respond({ status: 405, body: encoder.encode('Method Not Allowed') });
   }
+}
 ```
 
 ---
 
-Running HTTP file server
+# Uruchamianie serwera
+
+Kiedyś:
 
 ```sh
 $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
 ```
 
----
+Teraz:
 
-# ts-essentials
-
-The essential TypeScript types
-
-https://github.com/krzkaczor/ts-essentials
-
-It works in Deno out of the box
-
----
-
-Merge types
-
-```ts
-import { Merge } from
-  'https://raw.githack.com/krzkaczor/ts-essentials/master/lib/types.ts';
-
-type A = {
-  a: number;
-  b: string;
-};
-
-type B = {
-  b: number;
-};
-
-const x: Merge<A, B> = { a: 4, b: 2 };
-```
-
----
-
-MarkRequired
-
-```ts
-import { MarkRequired } from
-  'https://raw.githack.com/krzkaczor/ts-essentials/master/lib/types.ts';
-
-class A {
-  x: number;
-  y?: number;
-  z?: number;
-}
-type B = MarkRequired<A, 'y'>;
-
-const a: A = { x: 10 }; // OK
-const b: B = { x: 10 }; // ERROR: Property 'y' is missing in type '{ x: number; }'
-                        //        but required in type 'Required<Pick<A, "y">>'.
+```sh
+$ deno run --allow-net=:8000 --allow-read=`pwd`/dir serve.ts 
 ```
 
 ---
@@ -645,7 +453,9 @@ int factorial(int n) {
 
 Compile with Emscripten: https://emscripten.org/
 
-Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
+WasmFiddle: https://wasdk.github.io/WasmFiddle/
+
+WebAssembly Studio: https://webassembly.studio/
 
 ---
 
@@ -661,19 +471,19 @@ console.log(factorial(10));
 
 ---
 
-Running Deno with WebAssembly
+# Uruchamianie Deno z WebAssembly
 
-```sh
-$ deno run wasm.ts 
-Compile file:///Users/rsp/talks/deno/git/wid/wasm.ts
-️⚠️  Deno requests read access to "/Users/rsp/talks/deno/git/wid/program.wasm". Grant?
-[a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
-3628800
-```
+Kiedyś:
 
 ```sh
 $ deno run --allow-read=program.wasm wasm.ts 
 3628800
+```
+
+Teraz:
+
+```sh
+$ deno run --allow-read=`pwd`/program.wasm wasm.ts
 ```
 
 ---
@@ -684,14 +494,15 @@ WebAssembly: https://webassembly.org/
 <br>Emscripten: https://emscripten.org/
 <br>AssemblyScript: https://assemblyscript.org/
 <br>WasmFiddle: https://wasdk.github.io/WasmFiddle/
+<br> WebAssembly Studio: https://webassembly.studio/
 
 WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
 
-Languages compiled to WebAssembly: https://github.com/appcypher/awesome-wasm-langs
+Języki kompilowane do WebAssembly: https://github.com/appcypher/awesome-wasm-langs
 
 ---
 
-Languages compiled to WebAssembly
+Języki kompilowane do WebAssembly
 
 .Net,
 AssemblyScript,
@@ -745,30 +556,9 @@ https://github.com/appcypher/awesome-wasm-langs
 
 ---
 
-# bind/call/apply
+# Biblioteki
 
-```ts
-const o = { x: 1, f() { console.log(this.x++) } };
-
-const x = f => f();
-
-x(o.f.bind(o));
-
-x(() => o.f());
-
-x(() => o.f.bind(o).apply(null));
-
-x(function () { return o.f.bind(o).call(this) }.bind(undefined));
-
-x(((f, t, s = Symbol(), p = new Proxy(t, { get:
-  (a, n) => n === s ? f : t[n] })) => () => p[s]())(o.f, o));
-```
-
----
-
-# Libraries
-
-Built-in API: https://deno.land/typedoc/
+Wbudowane API: https://deno.land/typedoc/
 
 Standard Modules: https://deno.land/std/
 
@@ -776,25 +566,16 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Why it will get traction
+# Zalety
 
-1. Ryan Dahl (known for Node's amazing success)
-2. V8 (engine by Google)
-3. TypeScript (language by Microsoft)
-4. Rust (language by Mozilla)
-
----
-
-# Advantages
-
-1. Easy installation
-2. Easy development
-3. Secure by default
-4. Fine-grained privileges
-5. TypeScript support out of the box
-6. Modern language features
-7. Following Web standards
-8. Modern async/await-based API
+1. Łatwa instalacja
+2. Łatwy development
+3. Domyślnie bezpieczne
+4. Precyzyjne przywileje
+5. Wbudowany TypeScript
+6. Nowoczesna składnia
+7. Webowe standardy
+8. API oparte na async/await
 
 ---
 
@@ -811,7 +592,7 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Documentation
+# Dokumentacja
 
 - https://deno.land/manual.html
 - https://deno.land/typedoc/
@@ -830,29 +611,21 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Summary
+# Podsumowanie
 
-Deno is a JavaScript/TypeScript runtime<br>
-It is a standalone executable<br>
-It has no dependencies<br>
-It can import modules from URLs<br>
-It supports dynamic imports<br>
-It supports top-level await<br>
-It provides a restricted sandbox
-
----
-
-# Later Tonight
-
-- How to contribute to Deno? An example of adding functionality and overview of variety of places where you can help Deno<br>- by Michał Sabiniarz
-
--  Deno internals - how modern runtime is built<br>- by Bartek Iwańczuk
+Deno to runtime dla JavaScript/TypeScript<br>
+To pojedynczy plik<br>
+Nie ma zależności<br>
+Importuje URLe<br>
+Wspiera dynamiczne importy<br>
+Wspiera top-level await<br>
+Dostarcza ograniczony sandbox
 
 ---
 
-# Questions?
+# Pytania?
 
-Slides: https://pocztarski.com/wid
+Slajdy: https://pocztarski.com/ondd
 
 ## Rafał Pocztarski
 
