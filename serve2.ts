@@ -13,6 +13,6 @@ for await (const req of server) {
       req.respond({ status: 404, body: 'Not Found' });
     }
   } else {
-   req.respond({ status: 405, body: 'Method Not Allowed' });
+    req.respond({ status: 405, body: 'Method Not Allowed' });
   }
 }
