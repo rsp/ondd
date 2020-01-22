@@ -59,14 +59,12 @@ Deno = Server-side TS z V8 + Tokio w Rust
 
 # Instalacja
 
-<small>
-Dla odważnych:<br>
+Dla odważnych:<br><small>
 `curl -fsSL https://deno.land/x/install/install.sh | sh`<br>
-`iwr https://deno.land/x/install/install.ps1 | iex`
+`iwr https://deno.land/x/install/install.ps1 | iex` </small>
 
 Dla rozważnych:<br>
 https://github.com/denoland/deno/releases
-</small>
 
 ---
 
@@ -143,8 +141,13 @@ deno run --allow-net script.ts
 
 ---
 
+# Biblioteki
 
+- [deno.land/typedoc](https://deno.land/typedoc/)
+- [deno.land/std](https://deno.land/std/)
+- [deno.land/x](https://deno.land/x/)
 
+---
 
 # Czym jest Deno
 
