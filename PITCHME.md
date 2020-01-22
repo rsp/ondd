@@ -215,6 +215,10 @@ for await (const req of server) {
 
 ---
 
+[![PR 3705](pr3705.png)](https://github.com/denoland/deno/pull/3705)
+
+---
+
 # Czym jest Deno
 
 xXX
