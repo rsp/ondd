@@ -66,13 +66,19 @@ https://github.com/denoland/deno/releases
 
 ---
 
-`deno run script.ts`
+```bash
+deno run script.ts
+```
 
-`deno run https://pocztarski.com/hi.ts`
+```bash
+deno run https://pocztarski.com/hi.ts
+```
 
 ---
 
-`$ curl https://pocztarski.com/hi.ts`
+```bash
+$ curl https://pocztarski.com/hi.ts
+```
 
 ```ts
 import { hello } from './hello.ts';
@@ -82,7 +88,9 @@ hello('C_tech');
 
 ---
 
-`$ curl https://pocztarski.com/hello.ts`
+```bash
+$ curl https://pocztarski.com/hello.ts
+```
 
 ```ts
 export function hello(name: string = 'world'): void {
@@ -93,7 +101,7 @@ export function hello(name: string = 'world'): void {
 ---
 
 ```bash
-$ deno run https://pocztarski.com/hi.ts`
+$ deno run https://pocztarski.com/hi.ts
 ```
 
 ```text
@@ -115,7 +123,21 @@ Hello, C_tech!
 
 ---
 
+# Bezpieczeństwo
 
+Brak dostępu do sieci i dysku
+
+```bash
+deno run --allow-write script.ts
+```
+
+```bash
+deno run --allow-net script.ts
+```
+
+
+
+---
 
 
 # Czym jest Deno
