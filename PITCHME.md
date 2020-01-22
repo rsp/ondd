@@ -493,7 +493,7 @@ console.log(factorial(10));
 
 ---
 
-# Uruchamianie Deno z WebAssembly
+# Deno z WebAssembly
 
 Kiedyś:
 
