@@ -25,6 +25,95 @@ Możecie mnie znać ze Stack Overflow
 
 ---
 
+evented I/O for v8 javascript
+
+---
+
+A secure TypeScript runtime on V8
+
+---
+
+# Historia
+
+2019 - Ryan Dahl tworzy Node.js
+
+2018 - Ryan Dahl tworzy Deno
+
+---
+
+# Architektura 
+
+Node = Server-side JS z V8 + libuv w C++
+
+Deno = Server-side TS z V8 + Tokio w Rust
+
+---
+
+# Instalacja
+
+<small>
+Dla odważnych:<br>
+`curl -fsSL https://deno.land/x/install/install.sh | sh`<br>
+`iwr https://deno.land/x/install/install.ps1 | iex`
+
+Dla rozważnych:<br>
+https://github.com/denoland/deno/releases
+</small>
+
+---
+
+# DENO.LAND
+
+---
+
+`deno run script.ts`
+
+`deno run https://pocztarski.com/hi.ts`
+
+---
+
+`$ curl https://pocztarski.com/hi.ts`
+
+```ts
+import { hello } from './hello.ts';
+
+hello('C_tech');
+```
+
+---
+
+`$ curl https://pocztarski.com/hello.ts`
+
+```ts
+export function hello(name: string = 'world'): void {
+  console.log(`Hello, ${name}!`);
+}
+```
+
+---
+
+`$ deno run https://pocztarski.com/hi.ts`
+
+```
+Download https://pocztarski.com/hi.ts
+Compile https://pocztarski.com/hi.ts
+Download https://pocztarski.com/hello.ts
+Hello, C_tech!
+```
+
+---
+
+`$ deno run https://pocztarski.com/hi.ts`
+
+```
+Hello, C_tech!
+```
+
+---
+
+
+
+
 # Czym jest Deno
 
 xXX
