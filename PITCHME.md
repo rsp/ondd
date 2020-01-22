@@ -92,9 +92,11 @@ export function hello(name: string = 'world'): void {
 
 ---
 
-`$ deno run https://pocztarski.com/hi.ts`
-
+```bash
+$ deno run https://pocztarski.com/hi.ts`
 ```
+
+```text
 Download https://pocztarski.com/hi.ts
 Compile https://pocztarski.com/hi.ts
 Download https://pocztarski.com/hello.ts
@@ -103,9 +105,11 @@ Hello, C_tech!
 
 ---
 
-`$ deno run https://pocztarski.com/hi.ts`
-
+```bash
+$ deno run https://pocztarski.com/hi.ts
 ```
+
+```text
 Hello, C_tech!
 ```
 
