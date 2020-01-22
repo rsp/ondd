@@ -1,6 +1,7 @@
 import { serve } from 'https://deno.land/std@v0.28.0/http/server.ts';
 
 let n = 0;
+
 const encoder = new TextEncoder();
 const server = serve(':8000');
 console.log('Listening on http://localhost:8000/');

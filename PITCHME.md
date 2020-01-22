@@ -203,6 +203,7 @@ $ deno run example2.ts
 import { serve } from 'https://deno.land/std@v0.28.0/http/server.ts';
 
 let n = 0;
+
 const encoder = new TextEncoder();
 const server = serve(':8000');
 console.log('Listening on http://localhost:8000/');
@@ -257,6 +258,15 @@ error: Uncaught PermissionDenied: run again with the --allow-net flag
     at serve (server.ts:487:20)
     at listen (application.ts:33:25)
     at example4.ts:11:5
+```
+
+---
+
+```bash
+$ deno run --allow-net example4.ts 
+```
+```text
+Listening on http://localhost:8000/
 ```
 
 ---
