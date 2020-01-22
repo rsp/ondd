@@ -159,7 +159,9 @@ deno run --allow-net script.ts
 
 ---
 
-# Użycie bibliotek z błędem
+# Użycie bibliotek
+
+(z błędem)
 
 ```bash
 $ cat example1.ts
@@ -297,11 +299,12 @@ Listening on http://localhost:8000/
 
 # Stan obecny
 
-Niestabilne API
+v0.30
 
-# v0.30
+- Wciąż niestabilne API
+- Dużo niekompatybilnych zmian
 
-Najlepszy czas, żeby się zaangażować
+Czyli najlepszy czas, żeby się zaangażować
 
 ---
 
