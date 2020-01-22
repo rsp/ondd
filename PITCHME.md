@@ -215,7 +215,7 @@ for await (const req of server) {
 
 ---
 
-[![PR 3705](pr3705.png)](https://github.com/denoland/deno/pull/3705)
+[!<img src="pr3705.png" alt="PR 3705">](https://github.com/denoland/deno/pull/3705)
 
 ---
 
