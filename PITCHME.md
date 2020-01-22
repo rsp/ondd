@@ -125,8 +125,6 @@ Hello, C_tech!
 
 # Bezpieczeństwo
 
-Brak dostępu do sieci i dysku
-
 ```bash
 deno run --allow-write script.ts
 ```
