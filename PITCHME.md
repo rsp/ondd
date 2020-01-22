@@ -33,19 +33,27 @@ A secure TypeScript runtime on V8
 
 ---
 
-# Historia
-
-2019 - Ryan Dahl tworzy Node.js
-
-2018 - Ryan Dahl tworzy Deno
-
----
-
 # Architektura 
 
 Node = Server-side JS z V8 + libuv w C++
 
 Deno = Server-side TS z V8 + Tokio w Rust
+
+---
+
+“The only thing that matters in software<br>is the experience of the user.”<br><br>- Ryan Dahl
+
+---
+
+# Historia
+
+2009 Node.js
+
+2012 TypeScript
+
+2015 ts-node
+
+2018 Deno
 
 ---
 
@@ -133,9 +141,9 @@ deno run --allow-write script.ts
 deno run --allow-net script.ts
 ```
 
-
-
 ---
+
+
 
 
 # Czym jest Deno
