@@ -519,9 +519,8 @@ WebAssembly: https://webassembly.org/
 <br>AssemblyScript: https://assemblyscript.org/
 <br>WasmFiddle: https://wasdk.github.io/WasmFiddle/
 <br> WebAssembly Studio: https://webassembly.studio/
+<br>WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
 </small>
-
-WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
 
 Języki kompilowane do WebAssembly: https://github.com/appcypher/awesome-wasm-langs
 
