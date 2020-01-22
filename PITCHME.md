@@ -315,7 +315,7 @@ Czyli najlepszy czas, żeby się zaangażować
 
 ---
 
-# Moja prognoza:
+# Moja prognoza
 
 - Każdy będzie czekać aż Deno będzie "gotowe"
 - Nagle wszyscy zaczną szukać Deno Developerów
