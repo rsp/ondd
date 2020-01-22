@@ -68,7 +68,7 @@ Dla odważnych:<br><small>
 `iwr https://deno.land/x/install/install.ps1 | iex` </small>
 
 Dla rozważnych:<br>
-https://github.com/denoland/deno/releases
+[github.com/denoland/deno/releases](https://github.com/denoland/deno/releases)
 
 ---
 
