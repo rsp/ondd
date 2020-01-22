@@ -237,8 +237,32 @@ console.log('Listening on http://localhost:8000/');
 
 ---
 
+```bash
+$ deno run --reload example4.ts 
+```
+```text
+Compile file:///Users/rsp/talks/git/ondd/example4.ts
+Download https://deno.land/x/oak/mod.ts
+Download https://deno.land/x/oak/application.ts
+Download https://deno.land/x/oak/context.ts
+[...]
+Download https://deno.land/x/oak/pathToRegExp.ts
+Listening on http://localhost:8000/
+error: Uncaught PermissionDenied: run again with the --allow-net flag
+► $deno$/dispatch_json.ts:40:11
+    at DenoError ($deno$/errors.ts:20:5)
+    at unwrapResponse ($deno$/dispatch_json.ts:40:11)
+    at sendSync ($deno$/dispatch_json.ts:67:10)
+    at listen ($deno$/net.ts:179:15)
+    at serve (server.ts:487:20)
+    at listen (application.ts:33:25)
+    at example4.ts:11:5
+```
+
+---
 
 
+...
 
 # Czym jest Deno
 
