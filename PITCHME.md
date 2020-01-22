@@ -423,12 +423,7 @@ Hello, world!
 # Pliki
 
 ```ts
-import { serve } from 'https://deno.land/std@v0.28.0/http/server.ts';
-
-const encoder = new TextEncoder();
-const server = serve(':8000');
-console.log('Listening on http://localhost:8000/');
-
+// ...
 for await (const req of server) {
   console.log(`${req.method} ${req.url}`);
   if (req.method === 'GET') {
