@@ -341,6 +341,7 @@ v0.30
 
 - Wciąż niestabilne API
 - Dużo niekompatybilnych zmian
+- Architektura dyskutowana na GitHubie
 
 Czyli najlepszy czas, żeby się zaangażować
 
@@ -638,7 +639,7 @@ Third Party Modules: https://deno.land/x/
 # Podsumowanie
 
 Deno to runtime dla JavaScript/TypeScript<br>
-Cały runtime pojedynczy plik<br>
+Cały runtime to pojedynczy plik<br>
 Sam runtime nie ma zależności<br>
 Importuje i wykonuje URLe<br>
 Wspiera dynamiczne importy<br>
