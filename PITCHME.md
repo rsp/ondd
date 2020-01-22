@@ -23,6 +23,10 @@ Możecie mnie znać ze Stack Overflow
 
 <big><big> [pocztarski.com/ondd](https://pocztarski.com/ondd) </big></big>
 
+Przykłady
+
+https://github.com/rsp/ondd/tree/ondd
+
 ---
 
 evented I/O for v8 javascript
@@ -423,7 +427,7 @@ Hello, world!
 # Pliki
 
 ```ts
-// ...
+// (całość w przykładzie serve.ts)
 for await (const req of server) {
   console.log(`${req.method} ${req.url}`);
   if (req.method === 'GET') {
