@@ -513,11 +513,13 @@ $ deno run --allow-read=`pwd`/program.wasm wasm.ts
 
 # WebAssembly
 
+<small>
 WebAssembly: https://webassembly.org/
 <br>Emscripten: https://emscripten.org/
 <br>AssemblyScript: https://assemblyscript.org/
 <br>WasmFiddle: https://wasdk.github.io/WasmFiddle/
 <br> WebAssembly Studio: https://webassembly.studio/
+</small>
 
 WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
 
