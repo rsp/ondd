@@ -506,6 +506,7 @@ Teraz:
 
 ```bash
 $ deno run --allow-read=`pwd`/program.wasm wasm.ts
+3628800
 ```
 
 ---
