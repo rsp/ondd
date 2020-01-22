@@ -356,7 +356,7 @@ Czyli najlepszy czas, żeby się zaangażować
 - Każdy będzie czekać aż Deno będzie "gotowe"
 - Nagle wszyscy zaczną szukać Deno Developerów
 
-(Tak jak jest teraz z Node.js)
+(Tak jak było z Node.js)
 
 ---
 
