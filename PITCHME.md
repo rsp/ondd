@@ -173,15 +173,15 @@ Domyślnie brak dostępu do sieci i dysku
 
 # Przykłady
 
-```sh
+```bash
 $ deno run --allow-read=/etc/file.txt script.ts
 ```
 
-```sh
+```bash
 $ deno run --allow-write=/tmp script.ts
 ```
 
-```sh
+```bash
 $ deno run --allow-net script.ts
 ```
 
@@ -388,7 +388,7 @@ hello();
 
 # Brak uprawnień kiedyś
 
-```sh
+```bash
 $ deno run hi2.ts
 ```
 ```text
@@ -415,7 +415,7 @@ error: Uncaught TypeError: run again with the --allow-net flag
 
 # Uruchomienie z uprawnieniami
 
-```sh
+```bash
 $ deno run --allow-net=pocztarski.com hi2.ts
 ```
 ```text
@@ -449,13 +449,13 @@ for await (const req of server) {
 
 Kiedyś:
 
-```sh
+```bash
 $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
 ```
 
 Teraz:
 
-```sh
+```bash
 $ deno run --allow-net=:8000 --allow-read=`pwd`/dir serve.ts 
 ```
 
@@ -463,7 +463,7 @@ $ deno run --allow-net=:8000 --allow-read=`pwd`/dir serve.ts
 
 # WebAssembly
 
-```sh
+```bash
 $ cat factorial.c
 ```
 
@@ -473,7 +473,7 @@ int factorial(int n) {
 }
 ```
 
-Compile with Emscripten: https://emscripten.org/
+Emscripten: https://emscripten.org/
 
 WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
@@ -483,7 +483,7 @@ WebAssembly Studio: https://webassembly.studio/
 
 # WebAssembly<br>w Deno
 
-```js
+```ts
 const mod = new WebAssembly.Module(await Deno.readFile('program.wasm'));
 
 const { exports: { factorial } } = new WebAssembly.Instance(mod);
@@ -497,14 +497,14 @@ console.log(factorial(10));
 
 Kiedyś:
 
-```sh
+```bash
 $ deno run --allow-read=program.wasm wasm.ts 
 3628800
 ```
 
 Teraz:
 
-```sh
+```bash
 $ deno run --allow-read=`pwd`/program.wasm wasm.ts
 ```
 
