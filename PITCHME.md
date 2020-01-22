@@ -39,9 +39,9 @@ A secure TypeScript runtime on V8
 
 # Architektura 
 
-Node = Server-side JS z V8 + libuv w C++
+Node = Server-side JS (V8 + libuv w C++)
 
-Deno = Server-side TS z V8 + Tokio w Rust
+Deno = Server-side TS (V8 + Tokio w Rust)
 
 ---
 
