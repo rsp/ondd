@@ -25,7 +25,7 @@ Możecie mnie znać ze Stack Overflow
 
 Przykłady
 
-https://github.com/rsp/ondd/tree/ondd
+[github.com/rsp/ondd/tree/ondd](https://github.com/rsp/ondd/tree/ondd)
 
 ---
 
