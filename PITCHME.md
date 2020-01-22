@@ -430,7 +430,7 @@ Hello, world!
 # Pliki
 
 ```ts
-// (przed 18.01.2020 - całość w przykładzie serve.ts)
+// (do 18.01.2020 - całość w przykładzie serve.ts)
 for await (const req of server) {
   console.log(`${req.method} ${req.url}`);
   if (req.method === 'GET') {
