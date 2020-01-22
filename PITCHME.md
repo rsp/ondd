@@ -149,6 +149,72 @@ deno run --allow-net script.ts
 
 ---
 
+```bash
+$ cat example1.ts
+```
+```ts
+import { rand } from 'https://deno.land/x/rand/mod.ts';
+
+const x = rand.r8(); // error
+
+console.log(x);
+```
+
+---
+
+```bash
+$ deno run example1.ts
+```
+```text
+Compile file:///Users/rsp/talks/git/ondd/example1.ts
+error TS2339: Property 'r8' does not exist on type ...
+
+► file:///Users/rsp/talks/git/ondd/example1.ts:3:16
+
+3 const x = rand.r8(); // error
+                 ~~
+```
+
+---
+
+```bash
+$ cat example2.ts
+```
+```ts
+import { rand } from 'https://deno.land/x/rand/mod.ts';
+
+const x = rand.s8();
+
+console.log(x);
+```
+
+---
+
+```bash
+$ deno run example2.ts
+```
+```text
+-58
+```
+
+---
+
+```ts
+import { serve } from 'https://deno.land/std@v0.28.0/http/server.ts';
+
+let n = 0;
+const encoder = new TextEncoder();
+const server = serve(':8000');
+console.log('Listening on http://localhost:8000/');
+
+for await (const req of server) {
+  const message = `Hello #${++n}, C_tech!\n`;
+  req.respond({ body: encoder.encode(message) });
+}
+```
+
+---
+
 # Czym jest Deno
 
 xXX
