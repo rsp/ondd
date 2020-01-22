@@ -72,6 +72,8 @@ https://github.com/denoland/deno/releases
 
 ---
 
+# Użycie
+
 ```bash
 deno run script.ts
 ```
@@ -81,6 +83,8 @@ deno run https://pocztarski.com/hi.ts
 ```
 
 ---
+
+# Program
 
 ```bash
 $ curl https://pocztarski.com/hi.ts
@@ -94,6 +98,8 @@ hello('C_tech');
 
 ---
 
+# Biblioteka
+
 ```bash
 $ curl https://pocztarski.com/hello.ts
 ```
@@ -105,6 +111,8 @@ export function hello(name: string = 'world'): void {
 ```
 
 ---
+
+# Pierwsze uruchomienie
 
 ```bash
 $ deno run https://pocztarski.com/hi.ts
@@ -118,6 +126,8 @@ Hello, C_tech!
 ```
 
 ---
+
+# Ponowne uruchomienie
 
 ```bash
 $ deno run https://pocztarski.com/hi.ts
@@ -149,6 +159,8 @@ deno run --allow-net script.ts
 
 ---
 
+# Użycie bibliotek z błędem
+
 ```bash
 $ cat example1.ts
 ```
@@ -161,6 +173,8 @@ console.log(x);
 ```
 
 ---
+
+# TypeScript w akcji
 
 ```bash
 $ deno run example1.ts
@@ -177,6 +191,8 @@ error TS2339: Property 'r8' does not exist on type ...
 
 ---
 
+# Użycie bibliotek
+
 ```bash
 $ cat example2.ts
 ```
@@ -190,6 +206,8 @@ console.log(x);
 
 ---
 
+# Uruchomienie
+
 ```bash
 $ deno run example2.ts
 ```
@@ -198,6 +216,8 @@ $ deno run example2.ts
 ```
 
 ---
+
+# Serwer
 
 ```ts
 import { serve } from 'https://deno.land/std@v0.28.0/http/server.ts';
@@ -219,6 +239,8 @@ for await (const req of server) {
 [<img src="pr3705.png" alt="PR 3705">](https://github.com/denoland/deno/pull/3705)
 
 ---
+
+# Serwer z Oak
 
 ```ts
 import { Application } from 'https://deno.land/x/oak/mod.ts';
@@ -262,6 +284,8 @@ error: Uncaught PermissionDenied: run again with the --allow-net flag
 
 ---
 
+# Uruchomienie serwera
+
 ```bash
 $ deno run --allow-net example4.ts 
 ```
@@ -271,7 +295,9 @@ Listening on http://localhost:8000/
 
 ---
 
-Stan obecny
+# Stan obecny
+
+Niestabilne API
 
 # v0.30
 
@@ -286,10 +312,10 @@ Najlepszy czas, żeby się zaangażować
 
 ---
 
-Moja prognoza:
+# Moja prognoza:
 
 - Każdy będzie czekać aż Deno będzie "gotowe"
-- Nagle wszyscy będą szukać Deno Developerów
+- Nagle wszyscy zaczną szukać Deno Developerów
 
 (Tak jak jest teraz z Node.js)
 
@@ -359,7 +385,7 @@ hello();
 
 ---
 
-Kiedyś
+# Brak uprawnień kiedyś
 
 ```sh
 $ deno run hi2.ts
@@ -374,7 +400,7 @@ Hello, world!
 
 ---
 
-Teraz
+# Brak uprawnień teraz
 
 ```bash
 $ deno run hi2.ts
@@ -386,14 +412,14 @@ error: Uncaught TypeError: run again with the --allow-net flag
 
 ---
 
+# Uruchomienie z uprawnieniami
+
 ```sh
 $ deno run --allow-net=pocztarski.com hi2.ts
 ```
 ```text
 Hello, world!
 ```
-
----
 
 ---
 
@@ -459,7 +485,7 @@ WebAssembly Studio: https://webassembly.studio/
 
 ---
 
-# WebAssembly<br>in Deno
+# WebAssembly<br>w Deno
 
 ```js
 const mod = new WebAssembly.Module(await Deno.readFile('program.wasm'));
@@ -579,7 +605,7 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Recommended talks
+# Prelekcje
 
 <small>
 - [Ryan Dahl: Original Node.js presentation (2009)](https://www.youtube.com/watch?v=ztspvPYybIY)
@@ -602,7 +628,7 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Resources
+# Więcej informacji
 
 - https://deno.land/
 - https://deno.news/
