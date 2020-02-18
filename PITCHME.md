@@ -99,7 +99,7 @@ $ curl https://pocztarski.com/hi.ts
 ```ts
 import { hello } from './hello.ts';
 
-hello('C_tech');
+hello('DevDuck');
 ```
 
 ---
@@ -128,7 +128,7 @@ $ deno run https://pocztarski.com/hi.ts
 Download https://pocztarski.com/hi.ts
 Compile https://pocztarski.com/hi.ts
 Download https://pocztarski.com/hello.ts
-Hello, C_tech!
+Hello, DevDuck!
 ```
 
 ---
@@ -140,7 +140,7 @@ $ deno run https://pocztarski.com/hi.ts
 ```
 
 ```text
-Hello, C_tech!
+Hello, DevDuck!
 ```
 
 ---
@@ -269,7 +269,7 @@ const server = serve(':8000');
 console.log('Listening on http://localhost:8000/');
 
 for await (const req of server) {
-  const message = `Hello #${++n}, C_tech!\n`;
+  const message = `Hello #${++n}, DevDuck!\n`;
   req.respond({ body: encoder.encode(message) });
 }
 ```
@@ -290,7 +290,7 @@ const app = new Application();
 let n = 1;
 
 app.use(ctx => {
-  ctx.response.body = { greeting: `Hello #${++n}, C_tech!` };
+  ctx.response.body = { greeting: `Hello #${++n}, DevDuck!` };
 });
 
 app.listen('localhost:8000');

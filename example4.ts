@@ -5,7 +5,7 @@ const app = new Application();
 let n = 1;
 
 app.use(ctx => {
-  ctx.response.body = { greeting: `Hello #${++n}, C_tech!` };
+  ctx.response.body = { greeting: `Hello #${++n}, DevDuck!` };
 });
 
 app.listen('localhost:8000');
