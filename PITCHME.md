@@ -701,10 +701,10 @@ Slajdy: https://pocztarski.com/ondd
 
 ## Rafał Pocztarski<br>[pocztarski.com](https://pocztarski.com)
 
-[<img src="https://acclaim-production-app.s3.amazonaws.com/images/80a4f224-f7f9-4c44-928d-540b158b8902/node-js%2BContributor.png" height="80">][youracclaim-url]
-[<img height="80" src="https://stackexchange.com/users/flair/303952.png">][stackexchange-url]
-[<img height="80" src="https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow">][github-follow-url]
-[<img height="80" src="https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow">][twitter-follow-url]
+<!-- [<img src="https://acclaim-production-app.s3.amazonaws.com/images/80a4f224-f7f9-4c44-928d-540b158b8902/node-js%2BContributor.png" height="80">][youracclaim-url] -->
+[<img height="60" src="https://stackexchange.com/users/flair/303952.png">][stackexchange-url]
+[<img height="60" src="https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow">][github-follow-url]
+[<img height="60" src="https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow">][twitter-follow-url]
 
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/stackoverflow.svg">][stackoverflow-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg">][linkedin-url]
@@ -720,6 +720,9 @@ Slajdy: https://pocztarski.com/ondd
 [stackexchange-img]: https://stackexchange.com/users/flair/303952.png
 [linkedin-url]: https://www.linkedin.com/in/pocztarski)
 [facebook-url]: https://www.facebook.com/pocztarski
+[twitter-url]: https://twitter.com/pocztarski
+[github-url]: https://github.com/rsp
+[medium-url]: https://medium.com/pocztarski
 [googleplus-url]: https://plus.google.com/106457556668508404492/about
 [npm-url]: https://www.npmjs.com/~rsp
 [youracclaim-url]: https://www.youracclaim.com/user/pocztarski
