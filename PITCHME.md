@@ -711,7 +711,7 @@ Slajdy: https://pocztarski.com/ondd
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg">][facebook-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/googleplus.svg">][googleplus-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg">][linkedin-url]
-[<img height="24" src="angellist.svg">][angellist-url]
+[<img height="24" src="https://raw.githubusercontent.com/rsp/ondd/ondd/angellist.svg">][angellist-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/instagram.svg">][instagram-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/flickr.svg">][flickr-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/codepen.svg">][codepen-url]
