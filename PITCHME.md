@@ -701,14 +701,15 @@ Slajdy: https://pocztarski.com/ondd
 
 ## Rafał Pocztarski<br>[pocztarski.com](https://pocztarski.com)
 
-[<img height="120" src="https://stackexchange.com/users/flair/303952.png">][stackexchange-url]
 [<img src="https://acclaim-production-app.s3.amazonaws.com/images/80a4f224-f7f9-4c44-928d-540b158b8902/node-js%2BContributor.png" height="80">][youracclaim-url]
-[<img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedinstackoverflow.svg" height="24">][stackoverflow-url]
-[<img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg" height="24">][linkedin-url]
-[<img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg" height="24">][facebook-url]
-[<img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/googleplus.svg" height="24">][googleplus-url]
-[<img src="https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow" height="24">][github-follow-url]
-[<img src="https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow" height="24">][twitter-follow-url]
+[<img height="80" src="https://stackexchange.com/users/flair/303952.png">][stackexchange-url]
+[<img height="80" src="https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow">][github-follow-url]
+[<img height="80" src="https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow">][twitter-follow-url]
+
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/stackoverflow.svg">][stackoverflow-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg">][linkedin-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg">][facebook-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/googleplus.svg">][googleplus-url]
 
 [github-follow-url]: https://github.com/rsp
 [github-follow-img]: https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow
