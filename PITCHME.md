@@ -29,14 +29,6 @@ Przykłady
 
 ---
 
-evented I/O for v8 javascript
-
----
-
-A secure TypeScript runtime on V8
-
----
-
 # Architektura 
 
 Node = Server-side JS (V8 + libuv w C++)
