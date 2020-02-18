@@ -701,8 +701,6 @@ Slajdy: https://pocztarski.com/ondd
 
 ## Rafał Pocztarski<br>[pocztarski.com](https://pocztarski.com)
 
-“The only thing that matters in software<br>is the experience of the user.” - Ryan Dahl
-
 [<img height="120" src="https://stackexchange.com/users/flair/303952.png">][stackexchange-url]
 [<img src="https://acclaim-production-app.s3.amazonaws.com/images/80a4f224-f7f9-4c44-928d-540b158b8902/node-js%2BContributor.png" height="80">][youracclaim-url]
 [<img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedinstackoverflow.svg" height="24">][stackoverflow-url]
