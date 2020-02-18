@@ -736,3 +736,5 @@ Slajdy: https://pocztarski.com/ondd
 [googleplus-url]: https://plus.google.com/106457556668508404492/about
 [npm-url]: https://www.npmjs.com/~rsp
 [youracclaim-url]: https://www.youracclaim.com/user/pocztarski
+[angellist-url]: https://angel.co/pocztarski
+[codepen-url]: https://codepen.io/rsp/
