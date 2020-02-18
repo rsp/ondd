@@ -29,6 +29,10 @@ Przykłady
 
 ---
 
+# DENO.LAND
+
+---
+
 # Architektura 
 
 Node = Server-side JS (V8 + libuv w C++)
@@ -63,10 +67,6 @@ Dla odważnych:<br><small>
 
 Dla rozważnych:<br>
 [github.com/denoland/deno/releases](https://github.com/denoland/deno/releases)
-
----
-
-# DENO.LAND
 
 ---
 
