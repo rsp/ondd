@@ -699,12 +699,7 @@ Dostarcza ograniczony sandbox
 
 Slajdy: https://pocztarski.com/ondd
 
-## Rafał Pocztarski
-
-Bądźmy w kontakcie:
-https://twitter.com/pocztarski
-
-## [pocztarski.com](https://pocztarski.com)
+## Rafał Pocztarski<br>[pocztarski.com](https://pocztarski.com)
 
 “The only thing that matters in software<br>is the experience of the user.” - Ryan Dahl
 
