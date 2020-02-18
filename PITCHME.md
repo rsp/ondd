@@ -337,48 +337,6 @@ Listening on http://localhost:8000/
 
 ---
 
-# Stan obecny
-
-v0.30
-
-- Wciąż niestabilne API
-- Dużo niekompatybilnych zmian
-- Architektura dyskutowana na GitHubie
-
-Czyli najlepszy czas, żeby się zaangażować
-
----
-
-# Skazany na sukces
-
-1. Ryan Dahl (znany z sukcesu Node.js)
-2. V8 (Google)
-3. TypeScript (Microsoft)
-4. Rust (Mozilla)
-
----
-
-# Moja prognoza
-
-- Każdy będzie czekać aż Deno będzie "gotowe"
-- Nagle wszyscy zaczną szukać Deno Developerów
-
-(Tak jak było z Node.js)
-
----
-
-# Importowanie URLi
-
-Nie trzeba instalować zależności
-
----
-
-# Uruchamianie zdalnych skryptów
-
-Nie trzeba instalować narzędzi
-
----
-
 # Dynamic imports<br>top level await
 
 ```ts
@@ -559,21 +517,6 @@ $ deno run --allow-read=`pwd`/program.wasm wasm.ts
 
 ---
 
-# WebAssembly
-
-<small>
-WebAssembly: https://webassembly.org/
-<br>Emscripten: https://emscripten.org/
-<br>AssemblyScript: https://assemblyscript.org/
-<br>WasmFiddle: https://wasdk.github.io/WasmFiddle/
-<br> WebAssembly Studio: https://webassembly.studio/
-<br>WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
-</small>
-
-Języki kompilowane do WebAssembly: https://github.com/appcypher/awesome-wasm-langs
-
----
-
 Języki kompilowane do WebAssembly
 
 .Net,
@@ -648,38 +591,6 @@ Third Party Modules: https://deno.land/x/
 6. Nowoczesna składnia
 7. Webowe standardy
 8. API oparte na async/await
-
----
-
-# Prelekcje
-
-<small>
-- [Ryan Dahl: Original Node.js presentation (2009)](https://www.youtube.com/watch?v=ztspvPYybIY)
-- [History of Node.js by Ryan Dahl (2011)](https://www.youtube.com/watch?v=SAc0vQCC6UQ)
-- [10 Things I Regret About Node.js by Ryan Dahl (2018)](https://www.youtube.com/watch?v=M3BM9TB-8yA)
-- [Deno, A New Server-Side Runtime by Ryan Dahl (2018)](https://www.youtube.com/watch?v=FlTG0UXRAkE)
-- [From Node.js to Deno by Rafał Pocztarski (2019)](https://www.youtube.com/watch?v=Aib1OZLy0_c&t=5s)
-
-</small>
-
----
-
-# Dokumentacja
-
-- https://deno.land/manual.html
-- https://deno.land/typedoc/
-- https://deno.land/std/
-- https://deno.land/x/
-- https://www.typescriptlang.org/
-
----
-
-# Więcej informacji
-
-- https://deno.land/
-- https://deno.news/
-- https://denowarsaw.com/
-- https://denopoland.com/
 
 ---
 
