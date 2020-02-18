@@ -706,18 +706,20 @@ Slajdy: https://pocztarski.com/ondd
 [<img height="60" src="https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow">][github-follow-url]
 [<img height="60" src="https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow">][twitter-follow-url]
 
-[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/stackoverflow.svg">][stackoverflow-url]
-[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg">][linkedin-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/twitter.svg">][twitter-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/medium.svg">][medium-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg">][facebook-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/googleplus.svg">][googleplus-url]
-[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/medium.svg">][medium-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg">][linkedin-url]
 [<img height="24" src="angellist.svg">][angellist-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/instagram.svg">][instagram-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/flickr.svg">][flickr-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/codepen.svg">][codepen-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/github.svg">][github-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/stackexchange.svg">][stackexchange-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/stackoverflow.svg">][stackoverflow-url]
 
-c[github-follow-url]: https://github.com/rsp
+[github-follow-url]: https://github.com/rsp
 [github-follow-img]: https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow
 [twitter-follow-url]: https://twitter.com/intent/follow?screen_name=pocztarski
 [twitter-follow-img]: https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow
@@ -729,6 +731,8 @@ c[github-follow-url]: https://github.com/rsp
 [twitter-url]: https://twitter.com/pocztarski
 [github-url]: https://github.com/rsp
 [medium-url]: https://medium.com/pocztarski
+[flickr-url]: https://www.flickr.com/photos/pocztarski/
+[instagram-url]: https://www.instagram.com/pocztarski/
 [googleplus-url]: https://plus.google.com/106457556668508404492/about
 [npm-url]: https://www.npmjs.com/~rsp
 [youracclaim-url]: https://www.youracclaim.com/user/pocztarski
