@@ -706,10 +706,14 @@ Slajdy: https://pocztarski.com/ondd
 [<img height="60" src="https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow">][github-follow-url]
 [<img height="60" src="https://img.shields.io/twitter/follow/pocztarski.svg?style=social&label=Follow">][twitter-follow-url]
 
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/github.svg">][github-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/stackoverflow.svg">][stackoverflow-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/linkedin.svg">][linkedin-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/twitter.svg">][twitter-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg">][facebook-url]
 [<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/googleplus.svg">][googleplus-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/medium.svg">][medium-url]
+[<img height="24" src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/angellist.svg">][angellist-url]
 
 [github-follow-url]: https://github.com/rsp
 [github-follow-img]: https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow
